@@ -6,10 +6,11 @@ Summary:	I/O library for biomedical data
 Name:		biosig
 Version:	2.5.0
 Release:	1
-License:	GPL
-Group:		unknown	
+License:	GPLv3+
+Group:		Sciences/Biology	
 URL:		https://biosig.sourceforge.io/
 Source0:	https://downloads.sourceforge.net/biosig/%{name}-%{version}.src.tar.xz
+BuildRequires:	libb64-devel
 BuildRequires:	dcmtk-devel
 BuildRequires:	pkgconfig(python)
 BuildRequires:	python%{pyver}dist(setuptools)	
@@ -89,7 +90,7 @@ Headers and development files for %{name}.
 %install
 %make_install
 
-#remove static
+# remove static
 rm -fr %{buildroot}%{_libdir}/lib*.a
 
 # remove octave
