@@ -4,7 +4,7 @@
 
 Summary:	I/O library for biomedical data
 Name:		biosig
-Version:	2.5.2
+Version:	2.6.0
 Release:	1
 License:	GPLv3+
 Group:		Sciences/Biology	
