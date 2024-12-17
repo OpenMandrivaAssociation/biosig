@@ -4,16 +4,16 @@
 
 Summary:	I/O library for biomedical data
 Name:		biosig
-Version:	2.6.0
+Version:	2.6.1
 Release:	1
 License:	GPLv3+
-Group:		Sciences/Biology	
+Group:		Sciences/Biology
 URL:		https://biosig.sourceforge.io/
 Source0:	https://downloads.sourceforge.net/biosig/%{name}-%{version}.src.tar.xz
 BuildRequires:	libb64-devel
 BuildRequires:	dcmtk-devel
 BuildRequires:	pkgconfig(python)
-BuildRequires:	python%{pyver}dist(setuptools)	
+BuildRequires:	python%{pyver}dist(setuptools)
 BuildRequires:	python%{pyver}dist(numpy)
 BuildRequires:	pkgconfig(tinyxml)
 BuildRequires:	pkgconfig(zlib)
@@ -58,7 +58,7 @@ modeling, data visualization, and so on.
 
 %files -n %{libname}
 %license COPYING
-%{_libdir}/lib%{name}.so*
+%{_libdir}/lib%{name}.so.%{major}*
 
 #----------------------------------------------------------------------------
 
