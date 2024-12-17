@@ -57,7 +57,6 @@ artifact processing, quality control, feature extraction, classification,
 modeling, data visualization, and so on.
 
 %files -n %{libname}
-%license COPYING
 %{_libdir}/lib%{name}.so.%{major}*
 
 #----------------------------------------------------------------------------
