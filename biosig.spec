@@ -84,14 +84,14 @@ Headers and development files for %{name}.
 %autosetup -p1
 
 %build
-%configure
+%configure --enable-static
 %make_build
 
 %install
 %make_install
 
 # remove static
-#rm -fr %{buildroot}%{_libdir}/lib*.a
+rm -fr %{buildroot}%{_libdir}/lib*.a
 
 # remove octave
 rm -fr %{buildroot}%{_libdir}/octave
