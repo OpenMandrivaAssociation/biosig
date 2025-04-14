@@ -4,7 +4,7 @@
 
 Summary:	I/O library for biomedical data
 Name:		biosig
-Version:	2.6.1
+Version:	3.9.0
 Release:	1
 License:	GPLv3+
 Group:		Sciences/Biology
@@ -18,6 +18,7 @@ BuildRequires:	python%{pyver}dist(numpy)
 BuildRequires:	pkgconfig(tinyxml)
 BuildRequires:	pkgconfig(zlib)
 BuildRequires:	suitesparse-devel
+#BuildSystem: 	autotools
 
 %description
 BioSig is an open source software library for biomedical signal processing,
@@ -90,7 +91,7 @@ Headers and development files for %{name}.
 %make_install
 
 # remove static
-rm -fr %{buildroot}%{_libdir}/lib*.a
+#rm -fr %{buildroot}%{_libdir}/lib*.a
 
 # remove octave
 rm -fr %{buildroot}%{_libdir}/octave
